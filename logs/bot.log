@@ -1,0 +1,502 @@
+2025-04-27 11:52:58 INFO    Пользователь 5206356561 открыл управление целями
+2025-04-27 11:53:00 WARNING Необработанный callback: delete_goal
+2025-04-27 11:56:09 INFO    Пользователь 5206356561 открыл управление целями
+2025-04-27 11:56:11 WARNING Попытка удалить цель без указания URL
+2025-04-27 11:56:14 INFO    Запрошено добавление новой цели URL
+2025-04-27 11:56:16 ERROR   Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: BUTTON_DATA_INVALID
+2025-04-27 11:56:16 ERROR   Exception traceback:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/telebot/__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/telebot/util.py", line 150, in raise_exceptions
+    raise self.exception_info
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/telebot/util.py", line 93, in run
+    task(*args, **kwargs)
+    ~~~~^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/telebot/__init__.py", line 9233, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "/Users/yaroslavvolkov/Downloads/bot/ui/handlers.py", line 160, in callback_view_goals
+    bot.edit_message_text(
+    ~~~~~~~~~~~~~~~~~~~~~^
+        "🎯 Список целей:",
+        ^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        reply_markup=markup
+        ^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/telebot/__init__.py", line 4974, in edit_message_text
+    result = apihelper.edit_message_text(
+        self.token, text, chat_id=chat_id, message_id=message_id, inline_message_id=inline_message_id,
+        parse_mode=parse_mode, entities=entities, reply_markup=reply_markup, link_preview_options=link_preview_options,
+        business_connection_id=business_connection_id, timeout=timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/telebot/apihelper.py", line 1507, in edit_message_text
+    return _make_request(token, method_url, params=payload, method='post')
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/telebot/apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/telebot/apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: BUTTON_DATA_INVALID
+
+2025-04-27 11:56:24 INFO    Добавлена новая цель: https://www.instagram.com/p/DI1JfzYixLH/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==
+2025-04-27 11:56:32 INFO    Пользователь 5206356561 открыл управление целями
+2025-04-27 11:56:33 ERROR   Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: BUTTON_DATA_INVALID
+2025-04-27 11:56:33 ERROR   Exception traceback:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/telebot/__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/telebot/util.py", line 150, in raise_exceptions
+    raise self.exception_info
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/telebot/util.py", line 93, in run
+    task(*args, **kwargs)
+    ~~~~^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/telebot/__init__.py", line 9233, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "/Users/yaroslavvolkov/Downloads/bot/ui/handlers.py", line 160, in callback_view_goals
+    bot.edit_message_text(
+    ~~~~~~~~~~~~~~~~~~~~~^
+        "🎯 Список целей:",
+        ^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        reply_markup=markup
+        ^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/telebot/__init__.py", line 4974, in edit_message_text
+    result = apihelper.edit_message_text(
+        self.token, text, chat_id=chat_id, message_id=message_id, inline_message_id=inline_message_id,
+        parse_mode=parse_mode, entities=entities, reply_markup=reply_markup, link_preview_options=link_preview_options,
+        business_connection_id=business_connection_id, timeout=timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/telebot/apihelper.py", line 1507, in edit_message_text
+    return _make_request(token, method_url, params=payload, method='post')
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/telebot/apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/telebot/apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: BUTTON_DATA_INVALID
+
+2025-04-27 12:00:31 INFO    Пользователь 5206356561 открыл управление целями
+2025-04-27 12:00:35 INFO    Цель удалена: 0
+2025-04-27 12:00:39 INFO    Начало добавления аккаунта пользователем 5206356561
+2025-04-27 12:00:49 INFO    Пользователь 5206356561 открыл управление целями
+2025-04-27 12:00:53 INFO    Выбрана целевая URL: https://www.instagram.com/p/DI1JfzYixLH/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==
+2025-04-27 12:01:05 WARNING Необработанный callback: goals_back
+2025-04-27 12:01:07 INFO    Цель удалена: 0
+2025-04-27 12:01:09 INFO    Пользователь 5206356561 открыл управление целями
+2025-04-27 12:01:10 INFO    Цель удалена: 0
+2025-04-27 12:01:13 INFO    Пользователь 5206356561 открыл управление целями
+2025-04-27 12:01:15 WARNING Необработанный callback: goals_back
+2025-04-27 12:15:21 INFO    Пользователь 5206356561 открыл управление целями
+2025-04-27 12:15:29 INFO    Добавлена новая цель: https://www.instagram.com/p/DI1JfzYixLH/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==
+2025-04-27 12:15:38 INFO    Добавлена новая цель: https://www.instagram.com/p/DI1JfzYixLH/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==
+2025-04-27 12:25:00 INFO    Пользователь 5206356561 открыл управление целями
+2025-04-27 12:25:08 INFO    Добавлена новая цель: https://www.instagram.com/p/DI1JfzYixLH/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==
+2025-04-27 12:25:11 INFO    Цель удалена: 0
+2025-04-27 12:25:13 INFO    Пользователь 5206356561 открыл управление целями
+2025-04-27 12:25:32 INFO    Добавлена новая цель: https://www.instagram.com/p/DI1JfzYixLH/?utm_source=ig_
+2025-04-27 12:25:36 INFO    Цель удалена: 0
+2025-04-27 12:25:38 INFO    Пользователь 5206356561 открыл управление целями
+2025-04-27 12:25:45 INFO    Выбрана целевая URL: https://www.instagram.com/p/DI1JfzYixLH/?utm_source=ig_
+2025-04-27 12:25:49 INFO    Выбрана целевая URL: https://www.instagram.com/p/DI1JfzYixLH/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==
+2025-04-27 12:26:09 INFO    Цель удалена: 0
+2025-04-27 12:26:13 INFO    Пользователь 5206356561 открыл управление целями
+2025-04-27 12:26:14 INFO    Цель удалена: 1
+2025-04-27 12:26:16 INFO    Пользователь 5206356561 открыл управление целями
+2025-04-27 12:28:32 INFO    Пользователь 5206356561 открыл управление целями
+2025-04-27 12:28:34 INFO    delete_goal: пытаемся удалить URL → 0
+2025-04-27 12:28:34 INFO    delete_goal: удалено строк → 0 для URL 0
+2025-04-27 12:28:35 INFO    Цель удалена: 0
+2025-04-27 12:28:36 INFO    Пользователь 5206356561 открыл управление целями
+2025-04-27 12:28:38 INFO    delete_goal: пытаемся удалить URL → 1
+2025-04-27 12:28:38 INFO    delete_goal: удалено строк → 0 для URL 1
+2025-04-27 12:28:38 INFO    Цель удалена: 1
+2025-04-27 12:28:40 INFO    Пользователь 5206356561 открыл управление целями
+2025-04-27 12:28:42 INFO    Выбрана целевая URL: https://www.instagram.com/p/DI1JfzYixLH/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==
+2025-04-27 12:28:45 INFO    Выбрана целевая URL: https://www.instagram.com/p/DI1JfzYixLH/?utm_source=ig_
+2025-04-27 12:33:06 INFO    Пользователь 5206356561 открыл управление целями
+2025-04-27 12:33:35 INFO    delete_goal: пытаемся удалить URL → 0
+2025-04-27 12:33:35 INFO    delete_goal: удалено строк → 0 для URL 0
+2025-04-27 12:33:35 INFO    Цель удалена: 0
+2025-04-27 12:33:37 INFO    Пользователь 5206356561 открыл управление целями
+2025-04-27 12:33:39 INFO    delete_goal: пытаемся удалить URL → 1
+2025-04-27 12:33:39 INFO    delete_goal: удалено строк → 0 для URL 1
+2025-04-27 12:33:39 INFO    Цель удалена: 1
+2025-04-27 12:33:41 INFO    Пользователь 5206356561 открыл управление целями
+2025-04-27 12:33:43 INFO    delete_goal: пытаемся удалить URL → 0
+2025-04-27 12:33:43 INFO    delete_goal: удалено строк → 0 для URL 0
+2025-04-27 12:33:43 INFO    Цель удалена: 0
+2025-04-27 12:38:51 INFO    Пользователь 5206356561 открыл управление целями
+2025-04-27 12:38:52 INFO    delete_goal: пытаемся удалить URL → 0
+2025-04-27 12:38:52 INFO    delete_goal: удалено строк → 0 для URL 0
+2025-04-27 12:38:52 INFO    Цель удалена: 0
+2025-04-27 12:38:54 INFO    Пользователь 5206356561 открыл управление целями
+2025-04-27 12:38:57 INFO    delete_goal: пытаемся удалить URL → 1
+2025-04-27 12:38:57 INFO    delete_goal: удалено строк → 0 для URL 1
+2025-04-27 12:38:57 INFO    Цель удалена: 1
+2025-04-27 12:38:58 INFO    Пользователь 5206356561 открыл управление целями
+2025-04-27 12:43:28 INFO    Пользователь 5206356561 открыл управление целями
+2025-04-27 12:43:29 INFO    delete_goal: пытаемся удалить URL → https://www.instagram.com/p/DI1JfzYixLH/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==
+2025-04-27 12:43:29 INFO    delete_goal: удалено строк → 1 для URL https://www.instagram.com/p/DI1JfzYixLH/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==
+2025-04-27 12:43:29 INFO    delete_goal: удалено строк = 1 для URL https://www.instagram.com/p/DI1JfzYixLH/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==
+2025-04-27 12:43:31 INFO    delete_goal: пытаемся удалить URL → https://www.instagram.com/p/DI1JfzYixLH/?utm_source=ig_
+2025-04-27 12:43:31 INFO    delete_goal: удалено строк → 1 для URL https://www.instagram.com/p/DI1JfzYixLH/?utm_source=ig_
+2025-04-27 12:43:31 INFO    delete_goal: удалено строк = 1 для URL https://www.instagram.com/p/DI1JfzYixLH/?utm_source=ig_
+2025-04-27 12:43:55 INFO    Пользователь 5206356561 открыл управление целями
+2025-04-27 12:44:00 INFO    Добавлена новая цель: https://www.instagram.com/p/DI1JfzYixLH/?utm_source=ig_
+2025-04-27 12:44:19 INFO    delete_goal: пытаемся удалить URL → https://www.instagram.com/p/DI1JfzYixLH/?utm_source=ig_
+2025-04-27 12:44:19 INFO    delete_goal: удалено строк → 1 для URL https://www.instagram.com/p/DI1JfzYixLH/?utm_source=ig_
+2025-04-27 12:44:19 INFO    delete_goal: удалено строк = 1 для URL https://www.instagram.com/p/DI1JfzYixLH/?utm_source=ig_
+2025-04-27 12:44:22 INFO    Добавлена новая цель: https://chatgpt.com/c/680dedcb-7578-8009-ad53-d2468000ba7a
+2025-04-27 12:44:29 INFO    Добавлена новая цель: https://www.instagram.com/p/DI1JfzYixLH/?utm_source=ig_
+2025-04-27 12:44:32 INFO    delete_goal: пытаемся удалить URL → https://chatgpt.com/c/680dedcb-7578-8009-ad53-d2468000ba7a
+2025-04-27 12:44:32 INFO    delete_goal: удалено строк → 1 для URL https://chatgpt.com/c/680dedcb-7578-8009-ad53-d2468000ba7a
+2025-04-27 12:44:32 INFO    delete_goal: удалено строк = 1 для URL https://chatgpt.com/c/680dedcb-7578-8009-ad53-d2468000ba7a
+2025-04-27 12:44:35 INFO    delete_goal: пытаемся удалить URL → https://www.instagram.com/p/DI1JfzYixLH/?utm_source=ig_
+2025-04-27 12:44:35 INFO    delete_goal: удалено строк → 1 для URL https://www.instagram.com/p/DI1JfzYixLH/?utm_source=ig_
+2025-04-27 12:44:35 INFO    delete_goal: удалено строк = 1 для URL https://www.instagram.com/p/DI1JfzYixLH/?utm_source=ig_
+2025-04-27 12:47:49 INFO    Пользователь 5206356561 открыл управление целями
+2025-04-27 12:48:08 INFO    Добавлена новая цель: https://www.instagram.com/p/DI1JfzYixLH/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==
+2025-04-27 12:48:26 INFO    Добавлена новая цель: https://www.instagram.com/p/DI8g1HoCAk_/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==
+2025-04-27 12:48:29 INFO    Выбрана целевая URL: https://www.instagram.com/p/DI8g1HoCAk_/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==
+2025-04-27 12:48:32 INFO    Начало добавления аккаунта пользователем 5206356561
+2025-04-27 12:48:58 INFO    Пользователь 5206356561 ввёл логин: ma_can0206
+2025-04-27 12:49:02 INFO    Пользователь 5206356561 ввёл пароль
+2025-04-27 12:49:06 INFO    Пользователь 5206356561 ввёл прокси: без прокси
+2025-04-27 12:49:06 INFO    ✅ Сессия загружена для ma_can0206
+2025-04-27 12:49:35 INFO    Пользователь 5206356561 открыл управление целями
+2025-04-27 12:49:37 INFO    Выбрана целевая URL: https://www.instagram.com/p/DI8g1HoCAk_/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==
+2025-04-27 12:49:40 INFO    Выбрана целевая URL: https://www.instagram.com/p/DI1JfzYixLH/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==
+2025-04-27 12:49:42 INFO    Выбрана целевая URL: https://www.instagram.com/p/DI8g1HoCAk_/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==
+2025-04-27 12:49:49 INFO    User 5206356561 selected mode: random
+2025-04-27 12:49:55 INFO    Режим комментирования: random
+2025-04-27 12:49:57 INFO    ✅ Комментарий отправлен
+2025-04-27 12:49:57 INFO    Комментарий отправлен: Очень круто получилось! ❤️
+2025-04-27 12:50:50 INFO    Пользователь 5206356561 запросил статистику
+2025-04-27 12:50:56 INFO    Пользователь 5206356561 открыл меню загрузки комментариев
+2025-04-27 12:51:06 WARNING Необработанный callback: upload_from_db
+2025-04-27 12:51:56 INFO    Пользователь 5206356561 открыл меню загрузки комментариев
+2025-04-27 12:52:04 INFO    Начало добавления аккаунта пользователем 5206356561
+2025-04-27 12:55:24 INFO    Пользователь 5206356561 открыл меню расписания
+2025-04-27 12:55:29 WARNING Необработанный callback: schedule_add
+2025-04-27 12:57:44 INFO    Пользователь 5206356561 открыл настройки
+2025-04-27 13:07:51 INFO    Начало добавления аккаунта пользователем 5206356561
+2025-04-27 13:07:55 INFO    Пользователь 5206356561 ввёл логин: ⬅️ Назад
+2025-04-27 13:07:55 INFO    Пользователь 5206356561 ввёл логин: ⬅️ Назад
+2025-04-27 13:07:57 INFO    Пользователь 5206356561 ввёл пароль
+2025-04-27 13:07:57 INFO    Пользователь 5206356561 ввёл пароль
+2025-04-27 13:08:12 INFO    Начало добавления аккаунта пользователем 5206356561
+2025-04-27 13:12:13 INFO    Начало добавления аккаунта пользователем 5206356561
+2025-04-27 13:12:15 INFO    Пользователь 5206356561 ввёл логин: ⬅️ Назад
+2025-04-27 13:12:17 INFO    Пользователь 5206356561 ввёл пароль
+2025-04-27 13:12:23 INFO    Пользователь 5206356561 ввёл прокси: без прокси
+2025-04-27 13:12:23 INFO    https://i.instagram.com/api/v1/launcher/sync/
+2025-04-27 13:12:24 INFO    ⬅️ Назад [200] POST https://i.instagram.com/api/v1/launcher/sync/ (269.0.0.18.75, OnePlus 6T Dev)
+2025-04-27 13:12:24 INFO    https://i.instagram.com/api/v1/accounts/login/
+2025-04-27 13:12:25 INFO    ⬅️ Назад [400] POST https://i.instagram.com/api/v1/accounts/login/ (269.0.0.18.75, OnePlus 6T Dev)
+2025-04-27 13:12:25 ERROR   ❌ Ошибка входа: We can't find an account with ⬅️ Назад. Try another phone number or email, or if you don't have an Instagram account, you can sign up.
+2025-04-27 13:14:07 INFO    Начало добавления аккаунта пользователем 5206356561
+2025-04-27 13:14:12 INFO    Начало добавления аккаунта пользователем 5206356561
+2025-04-27 13:14:25 INFO    Пользователь 5206356561 ввёл логин: ma_can0206
+2025-04-27 13:14:30 INFO    Пользователь 5206356561 ввёл пароль
+2025-04-27 13:14:34 INFO    Пользователь 5206356561 ввёл прокси: без прокси
+2025-04-27 13:14:34 INFO    ✅ Сессия загружена для ma_can0206
+2025-04-27 13:14:59 INFO    Начало добавления аккаунта пользователем 5206356561
+2025-04-27 13:15:10 INFO    Пользователь 5206356561 ввёл логин: ma_can0206
+2025-04-27 13:15:17 INFO    Пользователь 5206356561 ввёл пароль
+2025-04-27 13:15:21 INFO    Пользователь 5206356561 ввёл прокси: без прокси
+2025-04-27 13:15:21 INFO    ✅ Сессия загружена для ma_can0206
+2025-04-27 13:15:43 INFO    User 5206356561 selected mode: custom
+2025-04-27 13:15:46 INFO    Режим комментирования: custom
+2025-04-27 13:15:47 INFO    ✅ Комментарий отправлен
+2025-04-27 13:15:48 INFO    Комментарий отправлен: "Идеально подобрано, прямо в точку! 🎯"
+2025-04-27 13:16:10 INFO    Пользователь 5206356561 открыл управление целями
+2025-04-28 12:42:31 INFO    Начало добавления аккаунта пользователем 5206356561
+2025-04-28 12:43:08 INFO    Пользователь 5206356561 ввёл логин: /start
+2025-04-28 12:43:29 INFO    Начало добавления аккаунта пользователем 5206356561
+2025-04-28 12:43:39 INFO    Пользователь 5206356561 ввёл логин: ma_can0206
+2025-04-28 12:43:48 INFO    Пользователь 5206356561 ввёл пароль
+2025-04-28 12:43:54 INFO    Пользователь 5206356561 ввёл прокси: без прокси
+2025-04-28 12:43:54 INFO    ✅ Сессия загружена для ma_can0206
+2025-04-28 12:45:21 INFO    Пользователь 5206356561 открыл управление целями
+2025-04-28 12:45:50 INFO    Установлен target_url = https://www.instagram.com/p/DI1JfzYixLH/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==
+2025-04-28 12:47:13 INFO    Начало добавления аккаунта пользователем 5206356561
+2025-04-28 12:47:30 INFO    Пользователь 5206356561 ввёл логин: ma_can0206
+2025-04-28 12:47:36 INFO    Пользователь 5206356561 ввёл пароль
+2025-04-28 12:47:39 INFO    Пользователь 5206356561 ввёл прокси: без прокси
+2025-04-28 12:47:39 INFO    ✅ Сессия загружена для ma_can0206
+2025-04-28 12:49:07 INFO    Начало добавления аккаунта пользователем 5206356561
+2025-04-28 12:52:07 INFO    Пользователь 5206356561 открыл управление целями
+2025-04-28 12:53:08 INFO    Пользователь 5206356561 запросил статистику
+2025-04-28 12:54:58 INFO    Начало добавления аккаунта пользователем 5206356561
+2025-04-28 12:55:09 INFO    Пользователь 5206356561 ввёл логин: ma_can0206
+2025-04-28 12:55:19 INFO    Пользователь 5206356561 ввёл пароль
+2025-04-28 12:55:24 INFO    Пользователь 5206356561 ввёл прокси: без прокси
+2025-04-28 12:55:24 INFO    ✅ Сессия загружена для ma_can0206
+2025-04-28 12:55:55 INFO    Пользователь 5206356561 открыл управление целями
+2025-04-28 13:00:56 INFO    Пользователь 5206356561 открыл меню загрузки комментариев
+2025-04-28 13:27:23 INFO    Начало добавления аккаунта пользователем 5206356561
+2025-04-28 13:27:29 INFO    Пользователь 5206356561 ввёл логин: ma_can0206
+2025-04-28 13:27:34 INFO    Пользователь 5206356561 ввёл пароль
+2025-04-28 13:27:38 INFO    Пользователь 5206356561 ввёл прокси: без прокси
+2025-04-28 13:27:38 INFO    ✅ Сессия загружена для ma_can0206
+2025-04-28 13:28:36 INFO    Пользователь 5206356561 открыл управление целями
+2025-04-28 13:28:49 INFO    Пользователь 5206356561 открыл меню загрузки комментариев
+2025-04-28 13:32:23 INFO    Начало добавления аккаунта пользователем 639822919
+2025-04-28 13:32:31 INFO    Пользователь 5206356561 открыл управление целями
+2025-04-28 13:33:14 INFO    delete_goal: пытаемся удалить URL → https://www.instagram.com/p/DI1JfzYixLH/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==
+2025-04-28 13:33:14 INFO    delete_goal: удалено строк → 1 для URL https://www.instagram.com/p/DI1JfzYixLH/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==
+2025-04-28 13:33:14 INFO    delete_goal: удалено строк = 1 для URL https://www.instagram.com/p/DI1JfzYixLH/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==
+2025-04-28 13:33:30 INFO    User 5206356561 selected mode: random
+2025-04-28 13:33:30 WARNING ⚠️ Нет доступных аккаунтов для ротации.
+2025-04-28 13:33:33 INFO    User 5206356561 selected mode: custom
+2025-04-28 13:33:33 WARNING ⚠️ Нет доступных аккаунтов для ротации.
+2025-05-01 12:11:37 INFO    Пользователь 5206356561 открыл настройки
+2025-05-01 12:11:42 INFO    Просмотр комментариев
+2025-05-01 12:11:45 INFO    Просмотр логов
+2025-05-01 12:11:52 INFO    Просмотр статистики комментариев
+2025-05-01 12:29:56 INFO    Начало добавления аккаунта пользователем 5206356561
+2025-05-01 12:31:42 INFO    Начало добавления аккаунта пользователем 5206356561
+2025-05-01 12:31:45 INFO    Пользователь 5206356561 ввёл логин: ma_can0206
+2025-05-01 12:31:50 INFO    Пользователь 5206356561 ввёл пароль
+2025-05-01 12:31:54 INFO    Пользователь 5206356561 ввёл прокси: без прокси
+2025-05-01 12:31:54 INFO    ✅ Сессия загружена для ma_can0206
+2025-05-01 12:39:46 INFO    Начало добавления аккаунта пользователем 5206356561
+2025-05-01 12:39:51 INFO    Пользователь 5206356561 ввёл логин: ma_can0206
+2025-05-01 12:39:55 INFO    Пользователь 5206356561 ввёл пароль
+2025-05-01 12:39:59 INFO    Пользователь 5206356561 ввёл прокси: без прокси
+2025-05-01 12:39:59 INFO    ✅ Сессия загружена для ma_can0206
+2025-05-01 12:41:31 INFO    Начало добавления аккаунта пользователем 5206356561
+2025-05-01 12:41:37 INFO    Пользователь 5206356561 ввёл логин: ma_can0206
+2025-05-01 12:41:41 INFO    Пользователь 5206356561 ввёл пароль
+2025-05-01 12:41:44 INFO    Пользователь 5206356561 ввёл прокси: без прокси
+2025-05-01 12:41:44 INFO    ✅ Сессия загружена для ma_can0206
+2025-05-01 12:52:24 INFO    Начало добавления аккаунта пользователем 5206356561
+2025-05-01 12:52:29 INFO    Пользователь 5206356561 ввёл логин: ma_can0206
+2025-05-01 12:52:34 INFO    Пользователь 5206356561 ввёл пароль
+2025-05-01 12:52:35 INFO    Пользователь 5206356561 ввёл прокси: без прокси
+2025-05-01 12:52:35 INFO    ✅ Сессия загружена для ma_can0206
+2025-05-01 12:54:14 ERROR   Ошибка мониторинга https://www.instagram.com/yarosalavyvi4/: Message: no such element: Unable to locate element: {"method":"css selector","selector":"article a[href*="/p/"]"}
+  (Session info: chrome=135.0.7049.115); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   chromedriver                        0x0000000100ecaa54 cxxbridge1$str$ptr + 2803960
+1   chromedriver                        0x0000000100ec2cf0 cxxbridge1$str$ptr + 2771860
+2   chromedriver                        0x0000000100a0e864 cxxbridge1$string$len + 93028
+3   chromedriver                        0x0000000100a55410 cxxbridge1$string$len + 382736
+4   chromedriver                        0x0000000100a96480 cxxbridge1$string$len + 649088
+5   chromedriver                        0x0000000100a497ec cxxbridge1$string$len + 334572
+6   chromedriver                        0x0000000100e8fccc cxxbridge1$str$ptr + 2562928
+7   chromedriver                        0x0000000100e92f98 cxxbridge1$str$ptr + 2575932
+8   chromedriver                        0x0000000100e702c4 cxxbridge1$str$ptr + 2433384
+9   chromedriver                        0x0000000100e93810 cxxbridge1$str$ptr + 2578100
+10  chromedriver                        0x0000000100e612f0 cxxbridge1$str$ptr + 2371988
+11  chromedriver                        0x0000000100eb357c cxxbridge1$str$ptr + 2708512
+12  chromedriver                        0x0000000100eb3708 cxxbridge1$str$ptr + 2708908
+13  chromedriver                        0x0000000100ec293c cxxbridge1$str$ptr + 2770912
+14  libsystem_pthread.dylib             0x0000000195b3dc0c _pthread_start + 136
+15  libsystem_pthread.dylib             0x0000000195b38b80 thread_start + 8
+
+2025-05-01 12:55:16 ERROR   Ошибка мониторинга https://www.instagram.com/yarosalavyvi4/: Message: no such element: Unable to locate element: {"method":"css selector","selector":"article a[href*="/p/"]"}
+  (Session info: chrome=135.0.7049.115); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   chromedriver                        0x0000000100ecaa54 cxxbridge1$str$ptr + 2803960
+1   chromedriver                        0x0000000100ec2cf0 cxxbridge1$str$ptr + 2771860
+2   chromedriver                        0x0000000100a0e864 cxxbridge1$string$len + 93028
+3   chromedriver                        0x0000000100a55410 cxxbridge1$string$len + 382736
+4   chromedriver                        0x0000000100a96480 cxxbridge1$string$len + 649088
+5   chromedriver                        0x0000000100a497ec cxxbridge1$string$len + 334572
+6   chromedriver                        0x0000000100e8fccc cxxbridge1$str$ptr + 2562928
+7   chromedriver                        0x0000000100e92f98 cxxbridge1$str$ptr + 2575932
+8   chromedriver                        0x0000000100e702c4 cxxbridge1$str$ptr + 2433384
+9   chromedriver                        0x0000000100e93810 cxxbridge1$str$ptr + 2578100
+10  chromedriver                        0x0000000100e612f0 cxxbridge1$str$ptr + 2371988
+11  chromedriver                        0x0000000100eb357c cxxbridge1$str$ptr + 2708512
+12  chromedriver                        0x0000000100eb3708 cxxbridge1$str$ptr + 2708908
+13  chromedriver                        0x0000000100ec293c cxxbridge1$str$ptr + 2770912
+14  libsystem_pthread.dylib             0x0000000195b3dc0c _pthread_start + 136
+15  libsystem_pthread.dylib             0x0000000195b38b80 thread_start + 8
+
+2025-05-01 12:56:17 ERROR   Ошибка мониторинга https://www.instagram.com/yarosalavyvi4/: Message: no such element: Unable to locate element: {"method":"css selector","selector":"article a[href*="/p/"]"}
+  (Session info: chrome=135.0.7049.115); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   chromedriver                        0x0000000100ecaa54 cxxbridge1$str$ptr + 2803960
+1   chromedriver                        0x0000000100ec2cf0 cxxbridge1$str$ptr + 2771860
+2   chromedriver                        0x0000000100a0e864 cxxbridge1$string$len + 93028
+3   chromedriver                        0x0000000100a55410 cxxbridge1$string$len + 382736
+4   chromedriver                        0x0000000100a96480 cxxbridge1$string$len + 649088
+5   chromedriver                        0x0000000100a497ec cxxbridge1$string$len + 334572
+6   chromedriver                        0x0000000100e8fccc cxxbridge1$str$ptr + 2562928
+7   chromedriver                        0x0000000100e92f98 cxxbridge1$str$ptr + 2575932
+8   chromedriver                        0x0000000100e702c4 cxxbridge1$str$ptr + 2433384
+9   chromedriver                        0x0000000100e93810 cxxbridge1$str$ptr + 2578100
+10  chromedriver                        0x0000000100e612f0 cxxbridge1$str$ptr + 2371988
+11  chromedriver                        0x0000000100eb357c cxxbridge1$str$ptr + 2708512
+12  chromedriver                        0x0000000100eb3708 cxxbridge1$str$ptr + 2708908
+13  chromedriver                        0x0000000100ec293c cxxbridge1$str$ptr + 2770912
+14  libsystem_pthread.dylib             0x0000000195b3dc0c _pthread_start + 136
+15  libsystem_pthread.dylib             0x0000000195b38b80 thread_start + 8
+
+2025-05-01 13:00:57 INFO    Начало добавления аккаунта пользователем 5206356561
+2025-05-01 13:01:04 INFO    Пользователь 5206356561 ввёл логин: ma_can0206
+2025-05-01 13:01:10 INFO    Пользователь 5206356561 ввёл пароль
+2025-05-01 13:01:12 INFO    Пользователь 5206356561 ввёл прокси: без прокси
+2025-05-01 13:01:12 INFO    ✅ Сессия загружена для ma_can0206
+2025-05-01 13:01:45 INFO    Режим комментирования: random
+2025-05-01 13:01:47 INFO    ✅ Комментарий отправлен
+2025-05-01 13:02:52 INFO    Режим комментирования: random
+2025-05-01 13:02:54 INFO    ✅ Комментарий отправлен
+2025-05-01 13:26:59 INFO    Пользователь 5206356561 открыл управление целями
+2025-05-01 13:27:34 INFO    Пользователь 5206356561 открыл управление целями
+2025-05-01 13:27:35 INFO    Выбрана целевая URL: https://www.instagram.com/p/DI8g1HoCAk_/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==
+2025-05-01 13:27:37 INFO    delete_goal: пытаемся удалить URL → https://www.instagram.com/p/DI8g1HoCAk_/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==
+2025-05-01 13:27:37 INFO    delete_goal: удалено строк → 1 для URL https://www.instagram.com/p/DI8g1HoCAk_/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==
+2025-05-01 13:27:37 INFO    delete_goal: удалено строк = 1 для URL https://www.instagram.com/p/DI8g1HoCAk_/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==
+2025-05-01 13:27:55 INFO    Добавлен профиль: https://www.instagram.com/yarosalavyvi4/
+2025-05-01 13:28:16 INFO    Добавлен профиль: https://www.instagram.com/mudja/
+2025-05-01 13:28:27 INFO    Выбрана целевая URL: https://www.instagram.com/mudja/
+2025-05-01 13:28:30 INFO    Выбрана целевая URL: https://www.instagram.com/yarosalavyvi4/
+2025-05-01 13:28:34 INFO    Выбрана целевая URL: https://www.instagram.com/mudja/
+2025-05-01 13:28:39 INFO    Выбрана целевая URL: https://www.instagram.com/yarosalavyvi4/
+2025-05-01 13:28:40 INFO    Выбрана целевая URL: https://www.instagram.com/mudja/
+2025-05-01 13:28:47 INFO    Начало добавления аккаунта пользователем 5206356561
+2025-05-01 13:28:52 INFO    Пользователь 5206356561 ввёл логин: ma_can0206
+2025-05-01 13:29:04 INFO    Пользователь 5206356561 ввёл пароль
+2025-05-01 13:29:06 INFO    Пользователь 5206356561 ввёл прокси: без прокси
+2025-05-01 13:29:06 INFO    ✅ Сессия загружена для ma_can0206
+2025-05-01 13:29:21 INFO    Пользователь 5206356561 открыл управление целями
+2025-05-01 13:29:22 INFO    Выбрана целевая URL: https://www.instagram.com/mudja/
+2025-05-01 13:29:32 INFO    Режим комментирования: custom
+2025-05-01 13:29:34 INFO    ✅ Комментарий отправлен
+2025-05-01 22:46:34 INFO    Начало добавления аккаунта пользователем 5206356561
+2025-05-01 22:46:39 INFO    Пользователь 5206356561 ввёл логин: ma_can0206
+2025-05-01 22:46:46 INFO    Пользователь 5206356561 ввёл пароль
+2025-05-01 22:46:49 INFO    Пользователь 5206356561 ввёл прокси: без прокси
+2025-05-01 22:46:49 INFO    ✅ Сессия загружена для ma_can0206
+2025-05-01 22:47:12 INFO    Пользователь 5206356561 открыл управление целями
+2025-05-01 22:47:15 INFO    Выбрана целевая URL: https://www.instagram.com/yarosalavyvi4/
+2025-05-01 22:47:27 INFO    Режим комментирования: random
+2025-05-01 22:47:28 INFO    ✅ Комментарий отправлен
+2025-05-01 22:47:48 INFO    Пользователь 5206356561 открыл управление целями
+2025-05-01 22:47:52 INFO    Выбрана целевая URL: https://www.instagram.com/yarosalavyvi4/
+2025-05-01 22:47:54 INFO    Выбрана целевая URL: https://www.instagram.com/mudja/
+2025-05-01 22:47:56 INFO    Выбрана целевая URL: https://www.instagram.com/yarosalavyvi4/
+2025-05-01 22:48:15 INFO    Режим комментирования: random
+2025-05-01 22:48:16 INFO    ✅ Комментарий отправлен
+2025-05-01 22:48:19 INFO    delete_goal: пытаемся удалить URL → https://www.instagram.com/mudja/
+2025-05-01 22:48:19 INFO    delete_goal: удалено строк → 1 для URL https://www.instagram.com/mudja/
+2025-05-01 22:48:19 INFO    delete_goal: удалено строк = 1 для URL https://www.instagram.com/mudja/
+2025-05-01 22:48:44 INFO    Режим комментирования: random
+2025-05-01 22:48:46 INFO    ✅ Комментарий отправлен
+2025-05-01 22:48:58 INFO    Выбрана целевая URL: https://www.instagram.com/yarosalavyvi4/
+2025-05-01 22:49:05 INFO    Начало добавления аккаунта пользователем 639822919
+2025-05-01 22:49:10 INFO    Пользователь 639822919 ввёл логин: makman0102
+2025-05-01 22:49:12 INFO    Пользователь 639822919 ввёл пароль
+2025-05-01 22:49:13 INFO    Пользователь 639822919 ввёл прокси: без прокси
+2025-05-01 22:49:13 INFO    ✅ Сессия загружена для makman0102
+2025-05-01 22:49:17 INFO    Режим комментирования: random
+2025-05-01 22:49:17 WARNING Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-05-01 22:49:19 WARNING Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-05-01 22:49:27 ERROR   ❌ Ошибка при отправке комментария:
+Traceback (most recent call last):
+  File "/Users/yaroslavvolkov/Downloads/bot/auth/selenium_auth.py", line 228, in post_comment
+    comment_icon = WebDriverWait(self.driver, 10).until(
+        EC.element_to_be_clickable(
+            (By.CSS_SELECTOR, 'svg[aria-label="Комментировать"]')
+        )
+    )
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/selenium/webdriver/support/wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+0   chromedriver                        0x00000001051e6a54 cxxbridge1$str$ptr + 2803960
+1   chromedriver                        0x00000001051decf0 cxxbridge1$str$ptr + 2771860
+2   chromedriver                        0x0000000104d2a864 cxxbridge1$string$len + 93028
+3   chromedriver                        0x0000000104d71410 cxxbridge1$string$len + 382736
+4   chromedriver                        0x0000000104db2480 cxxbridge1$string$len + 649088
+5   chromedriver                        0x0000000104d657ec cxxbridge1$string$len + 334572
+6   chromedriver                        0x00000001051abccc cxxbridge1$str$ptr + 2562928
+7   chromedriver                        0x00000001051aef98 cxxbridge1$str$ptr + 2575932
+8   chromedriver                        0x000000010518c2c4 cxxbridge1$str$ptr + 2433384
+9   chromedriver                        0x00000001051af810 cxxbridge1$str$ptr + 2578100
+10  chromedriver                        0x000000010517d2f0 cxxbridge1$str$ptr + 2371988
+11  chromedriver                        0x00000001051cf57c cxxbridge1$str$ptr + 2708512
+12  chromedriver                        0x00000001051cf708 cxxbridge1$str$ptr + 2708908
+13  chromedriver                        0x00000001051de93c cxxbridge1$str$ptr + 2770912
+14  libsystem_pthread.dylib             0x0000000195b3dc0c _pthread_start + 136
+15  libsystem_pthread.dylib             0x0000000195b38b80 thread_start + 8
+
+
+2025-05-01 22:49:49 INFO    Начало добавления аккаунта пользователем 5206356561
+2025-05-01 22:49:57 INFO    Пользователь 5206356561 ввёл логин: ma_can0206
+2025-05-01 22:50:05 INFO    Пользователь 5206356561 ввёл пароль
+2025-05-01 22:50:11 INFO    Пользователь 5206356561 ввёл прокси: без прокси
+2025-05-01 22:50:11 INFO    ✅ Сессия загружена для ma_can0206
+2025-05-01 22:50:33 INFO    Пользователь 5206356561 открыл управление целями
+2025-05-01 22:50:36 INFO    Выбрана целевая URL: https://www.instagram.com/yarosalavyvi4/
+2025-05-01 22:50:47 INFO    Режим комментирования: random
+2025-05-01 22:50:49 INFO    ✅ Комментарий отправлен
+2025-05-01 22:51:53 INFO    Пользователь 5206356561 открыл управление целями
+2025-05-01 22:52:08 INFO    Режим комментирования: random
+2025-05-01 22:52:10 INFO    ✅ Комментарий отправлен
+2025-05-01 22:53:14 INFO    Режим комментирования: random
+2025-05-01 22:53:16 INFO    ✅ Комментарий отправлен
+2025-05-01 22:54:21 INFO    Режим комментирования: random
+2025-05-01 22:54:23 INFO    ✅ Комментарий отправлен
+2025-05-01 22:56:58 INFO    Пользователь 5206356561 открыл управление целями
+2025-05-01 22:57:38 INFO    Добавлен профиль: https://www.instagram.com/bakabonanza/
+2025-05-01 22:57:41 INFO    Выбрана целевая URL: https://www.instagram.com/bakabonanza/
+2025-05-01 22:58:45 INFO    Начало добавления аккаунта пользователем 5206356561
+2025-05-01 22:58:52 INFO    Начало добавления аккаунта пользователем 5206356561
+2025-05-01 22:58:59 INFO    Пользователь 5206356561 ввёл логин: ma_can0206
+2025-05-01 22:59:07 INFO    Пользователь 5206356561 ввёл пароль
+2025-05-01 22:59:13 INFO    Пользователь 5206356561 ввёл прокси: без прокси
+2025-05-01 22:59:13 INFO    ✅ Сессия загружена для ma_can0206
+2025-05-01 22:59:44 INFO    Пользователь 5206356561 открыл управление целями
+2025-05-01 22:59:46 INFO    Выбрана целевая URL: https://www.instagram.com/bakabonanza/
+2025-05-01 23:00:49 INFO    Выбрана целевая URL: https://www.instagram.com/yarosalavyvi4/
+2025-05-01 23:01:01 INFO    Режим комментирования: random
+2025-05-01 23:01:03 INFO    ✅ Комментарий отправлен
+2025-05-01 23:01:17 INFO    Пользователь 5206356561 открыл управление целями
+2025-05-01 23:01:19 INFO    Выбрана целевая URL: https://www.instagram.com/bakabonanza/
+2025-05-01 23:01:39 INFO    Пользователь 5206356561 открыл управление целями
+2025-05-01 23:01:41 INFO    Выбрана целевая URL: https://www.instagram.com/yarosalavyvi4/
+2025-05-01 23:10:16 INFO    Начало добавления аккаунта пользователем 5206356561
+2025-05-01 23:10:20 INFO    Пользователь 5206356561 открыл управление целями
+2025-05-01 23:10:22 INFO    Выбрана целевая URL: https://www.instagram.com/yarosalavyvi4/
+2025-05-01 23:10:27 INFO    Начало добавления аккаунта пользователем 5206356561
+2025-05-01 23:10:36 INFO    Пользователь 5206356561 ввёл логин: ma_can0206
+2025-05-01 23:10:42 INFO    Пользователь 5206356561 ввёл пароль
+2025-05-01 23:16:59 INFO    Начало добавления аккаунта пользователем 5206356561
+2025-05-01 23:17:07 INFO    Пользователь 5206356561 ввёл логин: ma_can0206
+2025-05-01 23:17:11 INFO    Пользователь 5206356561 ввёл пароль
+2025-05-01 23:17:15 INFO    Пользователь 5206356561 ввёл прокси: без прокси
+2025-05-01 23:17:15 INFO    ✅ Сессия загружена для ma_can0206
+2025-05-01 23:17:35 INFO    Пользователь 5206356561 открыл управление целями
+2025-05-01 23:17:37 INFO    Выбран профиль: https://www.instagram.com/yarosalavyvi4/
+2025-05-01 23:17:47 INFO    Режим комментирования: random
+2025-05-01 23:17:48 INFO    ✅ Комментарий отправлен
+2025-05-01 23:18:31 INFO    Начало добавления аккаунта пользователем 5206356561
+2025-05-01 23:18:36 INFO    Пользователь 5206356561 ввёл логин: ma_can0206
+2025-05-01 23:18:40 INFO    Пользователь 5206356561 ввёл пароль
+2025-05-01 23:18:43 INFO    Пользователь 5206356561 ввёл прокси: без прокси
+2025-05-01 23:18:43 INFO    ✅ Сессия загружена для ma_can0206
+2025-05-01 23:18:58 INFO    Пользователь 5206356561 открыл управление целями
+2025-05-01 23:18:59 INFO    Выбран профиль: https://www.instagram.com/bakabonanza/
+2025-05-01 23:19:09 INFO    Режим комментирования: random
+2025-05-01 23:19:10 INFO    ✅ Комментарий отправлен
+2025-05-01 23:20:25 INFO    Начало добавления аккаунта пользователем 5206356561
+2025-05-01 23:20:32 INFO    Пользователь 5206356561 ввёл логин: ma_can0206
+2025-05-01 23:20:35 INFO    Пользователь 5206356561 ввёл пароль
+2025-05-01 23:20:39 INFO    Пользователь 5206356561 ввёл прокси: без прокси
+2025-05-01 23:20:39 INFO    ✅ Сессия загружена для ma_can0206
+2025-05-01 23:21:06 INFO    Пользователь 5206356561 открыл управление целями
+2025-05-01 23:21:08 INFO    Выбран профиль: https://www.instagram.com/yarosalavyvi4/
+2025-05-01 23:21:20 INFO    Режим комментирования: random
+2025-05-01 23:21:22 INFO    ✅ Комментарий отправлен
+2025-05-01 23:22:27 INFO    Режим комментирования: random
+2025-05-01 23:22:29 INFO    ✅ Комментарий отправлен
+2025-05-01 23:23:03 INFO    Пользователь 5206356561 открыл управление целями
+2025-05-01 23:23:09 INFO    Выбран профиль: https://www.instagram.com/bakabonanza/
+2025-05-01 23:23:27 INFO    Режим комментирования: custom
+2025-05-01 23:23:29 INFO    ✅ Комментарий отправлен
