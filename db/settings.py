@@ -5,7 +5,7 @@ import os
 import logging
 user_urls = {}
 
-TOKEN = "7964180470:AAGVxtiEsWawT8chSeDVdF_bxpq_sjObXsk"  # <-- вставь сюда свой токен
+TOKEN = "7573958918:AAHtX5rWRNV6l2GwWJdyUaII9Xbs6Dteuuk"  # <-- вставь сюда свой токен
 
 goals = []
 
