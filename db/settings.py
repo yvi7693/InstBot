@@ -5,7 +5,7 @@ import os
 import logging
 user_urls = {}
 
-TOKEN = "7573958918:AAHtX5rWRNV6l2GwWJdyUaII9Xbs6Dteuuk"  # <-- вставь сюда свой токен
+TOKEN = "7573958918:AAHYRCZXCk8f0lkSxNKoj79JEYdmbqPq0Ts"  # <-- вставь сюда свой токен
 
 goals = []
 
@@ -105,6 +105,7 @@ def init_db():
             )
         """)
         conn.commit()
+
 
 
 
