@@ -2,4 +2,4 @@ pyTelegramBotAPI
 instagrapi
 selenium
 undetected-chromedriver
-distutils
+
